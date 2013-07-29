@@ -8,10 +8,10 @@ sites. MIT license.
 * `HttpTestCase` mixin provides `assertHttpOK`, `assertHttpNotFound`
   etc instead of writing `assertEqual(response.status_code, 200)`, and
   a redirect assertion that supports external URLs.
+* Empty cache test mixin, to start from afresh every time
 
 ## Future Features
 
 * Example usage
 * PEP 8 assertion mixin
 * Form validation mixin
-* Clean cache test mixin, to start from afresh every time
