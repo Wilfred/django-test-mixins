@@ -14,3 +14,4 @@ sites. MIT license.
 * Example usage
 * PEP 8 assertion mixin
 * Form validation mixin
+* Clean cache test mixin, to start from afresh every time
