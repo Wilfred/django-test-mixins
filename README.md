@@ -1,3 +1,13 @@
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
+- [django-test-mixins](#django-test-mixins)
+	- [Usage](#usage)
+		- [HttpTestCase](#httptestcase)
+		- [EmptyCacheTestCase](#emptycachetestcase)
+		- [FormValidationTestCase](#formvalidationtestcase)
+		- [Combining test cases](#combining-test-cases)
+	- [Future Features](#future-features)
+
 # django-test-mixins
 
 Additional assertions and test conveniences for testing django
