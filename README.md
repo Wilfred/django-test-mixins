@@ -103,4 +103,3 @@ multiple classes.
 ## Future Features
 
 * PEP 8 assertion mixin
-* Form validation mixin
