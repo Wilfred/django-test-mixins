@@ -2,7 +2,7 @@
 
 - [django-test-mixins](#django-test-mixins)
 	- [Usage](#usage)
-		- [HttpTestCase](#httptestcase)
+		- [HttpCodeTestCase](#httpcodetestcase)
 		- [EmptyCacheTestCase](#emptycachetestcase)
 		- [FormValidationTestCase](#formvalidationtestcase)
 		- [Combining test cases](#combining-test-cases)
@@ -21,7 +21,7 @@ All classes inherit from
 [django.test.TestCase](https://docs.djangoproject.com/en/dev/topics/testing/overview/#django.test.TestCase)
 so you can access the Django assertions and the HTTP client as usual.
 
-### HttpTestCase
+### HttpCodeTestCase
 
 `HttpCodeTestCase` provides the following assertions:
 
