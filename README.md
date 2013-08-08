@@ -13,10 +13,10 @@ so you can access the Django assertions and the HTTP client as usual.
 
 `HttpCodeTestCase` provides the following assertions:
 
-* `assertHttpOK(request)`
-* `assertHttpBadRequest(request)`
-* `assertHttpForbidden(request)`
-* `assertHttpNotFound(request)`
+* `assertHttpOK(response)`
+* `assertHttpBadRequest(response)`
+* `assertHttpForbidden(response)`
+* `assertHttpNotFound(response)`
 
 Example:
 
