@@ -21,6 +21,10 @@ All classes inherit from
 [django.test.TestCase](https://docs.djangoproject.com/en/dev/topics/testing/overview/#django.test.TestCase)
 so you can access the Django assertions and the HTTP client as usual.
 
+Installation is simply a matter of:
+
+    $ pip install django_test_mixins
+
 ### HttpCodeTestCase
 
 `HttpCodeTestCase` provides the following assertions:
