@@ -6,6 +6,8 @@
 		- [EmptyCacheTestCase](#emptycachetestcase)
 		- [FormValidationTestCase](#formvalidationtestcase)
 		- [Combining test cases](#combining-test-cases)
+	- [Changelog](#changelog)
+		- [v1.0](#v10)
 	- [Future Features](#future-features)
 
 # django-test-mixins
@@ -99,6 +101,12 @@ multiple classes.
         def test_home_page(self):
             response = self.client.get(reverse('index'))
             self.assertHttpOK(response)
+
+## Changelog
+
+### v1.0
+
+Initial release.
 
 ## Future Features
 
