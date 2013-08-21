@@ -5,8 +5,11 @@
 		- [HttpCodeTestCase](#httpcodetestcase)
 		- [EmptyCacheTestCase](#emptycachetestcase)
 		- [FormValidationTestCase](#formvalidationtestcase)
+		- [RedirectTestCase](#redirecttestcase)
 		- [Combining test cases](#combining-test-cases)
 	- [Changelog](#changelog)
+		- [v1.3](#v13)
+		- [v1.2](#v12)
 		- [v1.1](#v11)
 		- [v1.0](#v10)
 	- [Future Features](#future-features)
@@ -98,6 +101,38 @@ class TestCreateHouse(FormValidationTestCase):
         self.assertFormInvalid(response, form_name="house_form")
 ```
 
+### RedirectTestCase
+
+`RedirectTestCase` provides the following assertions:
+
+* `assertRedirectsTo(response, expected_url)`
+
+Django has `TestCase.assertRedirects`
+([docs](https://docs.djangoproject.com/en/dev/topics/testing/overview/#django.test.SimpleTestCase.assertRedirects))
+but this does not support redirects to external URLs because of
+limitations in the test client.
+
+`assertRedirectsTo` does not support chained redirects, so you can't
+do `self.client.get(SOME_URL, follow=True)`.
+
+Example:
+
+```python
+from django.core.urlresolvers import reverse
+
+from django_test_mixins import FormValidationTestCase
+
+
+class TestIndex(RedirectTestCase):
+    def test_home_redirects_to_login(self):
+        """If the user isn't logged in, index should redirect to the login page.
+
+        """
+        response = self.client.get(reverse('index'))
+        self.assertRedirectsTo(response, reverse('log_in'))
+```
+
+
 ### Combining test cases
 
 You can freely combine these classes by simply inheriting from
@@ -116,6 +151,10 @@ class TestIndex(FreshCacheTestCase, HttpCodeTestCase):
 ```
 
 ## Changelog
+
+### v1.3
+
+Added `RedirectTestCase`.
 
 ### v1.2
 
