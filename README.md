@@ -7,6 +7,7 @@
 		- [FormValidationTestCase](#formvalidationtestcase)
 		- [Combining test cases](#combining-test-cases)
 	- [Changelog](#changelog)
+		- [v1.1](#v11)
 		- [v1.0](#v10)
 	- [Future Features](#future-features)
 
@@ -115,6 +116,11 @@ class TestIndex(FreshCacheTestCase, HttpCodeTestCase):
 ```
 
 ## Changelog
+
+### v1.1
+
+Fixed `HttpCodeTestCase` assertions which were throwing
+`AttributeError`.
 
 ### v1.0
 

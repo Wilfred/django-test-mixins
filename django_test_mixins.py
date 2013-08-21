@@ -10,16 +10,16 @@ class HttpCodeTestCase(TestCase):
             code, code_description, response.status_code)
 
     def assertHttpOK(self, response):
-        self.assertExpectHttpCode(response, 200, "OK")
+        self.assertHttpCode(response, 200, "OK")
 
     def assertHttpBadRequest(self, response):
-        self.assertExpectHttpCode(response, 400, "Bad Request")
+        self.assertHttpCode(response, 400, "Bad Request")
 
     def assertHttpForbidden(self, response):
-        self.assertExpectHttpCode(response, 403, "Forbidden")
+        self.assertHttpCode(response, 403, "Forbidden")
 
     def assertHttpNotFound(self, response):
-        self.assertExpectHttpCode(response, 404, "Not Found")
+        self.assertHttpCode(response, 404, "Not Found")
 
 
 class EmptyCacheTestCase(TestCase):
