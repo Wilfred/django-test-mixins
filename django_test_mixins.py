@@ -7,7 +7,7 @@ class HttpCodeTestCase(TestCase):
         self.assertEqual(
             response.status_code, code,
             "Expected an HTTP %s (%s) response, but got HTTP %s" %
-            code, code_description, response.status_code)
+            (code, code_description, response.status_code))
 
     def assertHttpOK(self, response):
         self.assertHttpCode(response, 200, "OK")

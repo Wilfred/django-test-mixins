@@ -117,6 +117,11 @@ class TestIndex(FreshCacheTestCase, HttpCodeTestCase):
 
 ## Changelog
 
+### v1.2
+
+Fixed a crash on `HttpCodeTestCase` assertions when the assertion
+failed.
+
 ### v1.1
 
 Fixed `HttpCodeTestCase` assertions which were throwing
