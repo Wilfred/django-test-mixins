@@ -12,6 +12,9 @@ class HttpCodeTestCase(TestCase):
     def assertHttpOK(self, response):
         self.assertHttpCode(response, 200, "OK")
 
+    def assertHttpCreated(self, response):
+        self.assertHttpCode(response, 201, "Created")
+
     def assertHttpBadRequest(self, response):
         self.assertHttpCode(response, 400, "Bad Request")
 

@@ -34,6 +34,7 @@ Installation is simply a matter of:
 `HttpCodeTestCase` provides the following assertions:
 
 * `assertHttpOK(response)`
+* `assertHttpCreated(response)`
 * `assertHttpBadRequest(response)`
 * `assertHttpForbidden(response)`
 * `assertHttpNotFound(response)`
@@ -151,6 +152,10 @@ class TestIndex(FreshCacheTestCase, HttpCodeTestCase):
 ```
 
 ## Changelog
+
+### v1.4
+
+Added `HttpCodeTestCase.assertHttpCreated`
 
 ### v1.3
 
