@@ -1,18 +1,19 @@
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+**Table of Contents** *generated with [autotoc](https://github.com/Wilfred/autotoc)*
 
 - [django-test-mixins](#django-test-mixins)
-	- [Usage](#usage)
-		- [HttpCodeTestCase](#httpcodetestcase)
-		- [EmptyCacheTestCase](#emptycachetestcase)
-		- [FormValidationTestCase](#formvalidationtestcase)
-		- [RedirectTestCase](#redirecttestcase)
-		- [Combining test cases](#combining-test-cases)
-	- [Changelog](#changelog)
-		- [v1.3](#v13)
-		- [v1.2](#v12)
-		- [v1.1](#v11)
-		- [v1.0](#v10)
-	- [Future Features](#future-features)
+  - [Usage](#usage)
+    - [HttpCodeTestCase](#httpcodetestcase)
+    - [EmptyCacheTestCase](#emptycachetestcase)
+    - [FormValidationTestCase](#formvalidationtestcase)
+    - [RedirectTestCase](#redirecttestcase)
+    - [Combining test cases](#combining-test-cases)
+  - [Changelog](#changelog)
+    - [v1.4](#v14)
+    - [v1.3](#v13)
+    - [v1.2](#v12)
+    - [v1.1](#v11)
+    - [v1.0](#v10)
+  - [Future Features](#future-features)
 
 # django-test-mixins
 
