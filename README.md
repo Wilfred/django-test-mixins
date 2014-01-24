@@ -8,6 +8,7 @@
     - [RedirectTestCase](#redirecttestcase)
     - [Combining test cases](#combining-test-cases)
   - [Changelog](#changelog)
+    - [v1.5](#v15)
     - [v1.4](#v14)
     - [v1.3](#v13)
     - [v1.2](#v12)
@@ -26,7 +27,9 @@ All classes inherit from
 [django.test.TestCase](https://docs.djangoproject.com/en/dev/topics/testing/overview/#django.test.TestCase)
 so you can access the Django assertions and the HTTP client as usual.
 
-Installation is simply a matter of:
+django-test-mixins is
+[available on PyPI](https://pypi.python.org/pypi/django_test_mixins). Installation
+is simply a matter of:
 
     $ pip install django_test_mixins
 
