@@ -39,6 +39,7 @@ Installation is simply a matter of:
 * `assertHttpBadRequest(response)`
 * `assertHttpForbidden(response)`
 * `assertHttpNotFound(response)`
+* `assertHttpMethodNotAllowed(response)`
 
 Example:
 
@@ -153,6 +154,10 @@ class TestIndex(FreshCacheTestCase, HttpCodeTestCase):
 ```
 
 ## Changelog
+
+### v1.5
+
+Added `HttpCodeTestCase.assertHttpMethodNotAllowed`
 
 ### v1.4
 

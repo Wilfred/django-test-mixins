@@ -24,6 +24,9 @@ class HttpCodeTestCase(TestCase):
     def assertHttpNotFound(self, response):
         self.assertHttpCode(response, 404, "Not Found")
 
+    def assertHttpMethodNotAllowed(self, response):
+        self.assertHttpCode(response, 405, "Method Not Allowed")
+
 
 class EmptyCacheTestCase(TestCase):
     """Ensure that every test starts with an empty cache."""
