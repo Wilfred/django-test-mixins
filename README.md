@@ -35,15 +35,20 @@ is simply a matter of:
 
 ### HttpCodeTestCase
 
-`HttpCodeTestCase` provides the following assertions:
+`HttpCodeTestCase` provides the following assertions for exact HTTP responses:
 
-* `assertHttpOK(response)`
-* `assertHttpCreated(response)`
-* `assertHttpBadRequest(response)`
-* `assertHttpUnauthorized(response)`
-* `assertHttpForbidden(response)`
-* `assertHttpNotFound(response)`
-* `assertHttpMethodNotAllowed(response)`
+* `assertHttpOK(response)` (200)
+* `assertHttpCreated(response)` (201)
+* `assertHttpBadRequest(response)` (400)
+* `assertHttpUnauthorized(response)` (401)
+* `assertHttpForbidden(response)` (403)
+* `assertHttpNotFound(response)` (404)
+* `assertHttpMethodNotAllowed(response)` (405)
+
+It also provides the following assertions for groups of HTTP
+responses:
+
+* `assertHttpRedirect` (3XX)
 
 Example:
 
@@ -158,6 +163,10 @@ class TestIndex(FreshCacheTestCase, HttpCodeTestCase):
 ```
 
 ## Changelog
+
+### v1.7
+
+Added `HttpCodeTestCase.assertHttpRedirect`
 
 ### v1.6
 

@@ -15,6 +15,16 @@ class HttpCodeTestCase(TestCase):
     def assertHttpCreated(self, response):
         self.assertHttpCode(response, 201, "Created")
 
+    def assertHttpRedirect(self, response):
+        """Assert that we had any redirect status code.
+
+        """
+        self.assertTrue(
+            300 <= response.status_code < 400,
+            "Expected an HTTP 3XX (redirect) response, but bot HTTP %s" %
+            response.status_code
+        )
+
     def assertHttpBadRequest(self, response):
         self.assertHttpCode(response, 400, "Bad Request")
         
