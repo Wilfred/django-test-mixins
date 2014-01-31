@@ -17,6 +17,9 @@ class HttpCodeTestCase(TestCase):
 
     def assertHttpBadRequest(self, response):
         self.assertHttpCode(response, 400, "Bad Request")
+        
+    def assertHttpUnauthorized(self, response):
+        self.assertHttpCode(response, 401, "Unauthorized")
 
     def assertHttpForbidden(self, response):
         self.assertHttpCode(response, 403, "Forbidden")
