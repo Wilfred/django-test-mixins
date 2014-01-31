@@ -40,6 +40,7 @@ is simply a matter of:
 * `assertHttpOK(response)`
 * `assertHttpCreated(response)`
 * `assertHttpBadRequest(response)`
+* `assertHttpUnauthorized(response)`
 * `assertHttpForbidden(response)`
 * `assertHttpNotFound(response)`
 * `assertHttpMethodNotAllowed(response)`
@@ -157,6 +158,10 @@ class TestIndex(FreshCacheTestCase, HttpCodeTestCase):
 ```
 
 ## Changelog
+
+### v1.6
+
+Added `HttpCodeTestCase.assertHttpUnauthorized`
 
 ### v1.5
 
