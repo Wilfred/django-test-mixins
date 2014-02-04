@@ -8,4 +8,7 @@ setup(name='django_test_mixins',
       maintainer_email="me@wilfred.me.uk",
       license='MIT',
       py_modules=['django_test_mixins'],
-      )
+      classifiers=[
+          'License :: OSI Approved :: BSD License'
+      ]
+)
