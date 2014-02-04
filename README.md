@@ -23,7 +23,11 @@
 # django-test-mixins
 
 Additional assertions and test conveniences for testing django
-sites. MIT license.
+sites.
+
+[![Latest Version](https://pypip.in/v/django_test_mixins/badge.png)](https://pypi.python.org/pypi/django_test_mixins/)
+[![Downloads](https://pypip.in/d/django_test_mixins/badge.png)](https://pypi.python.org/pypi/django_test_mixins/)
+[![License](https://pypip.in/license/django_test_mixins/badge.png)](https://pypi.python.org/pypi/django_test_mixins/)
 
 ## Usage
 
