@@ -8,6 +8,9 @@
     - [RedirectTestCase](#redirecttestcase)
     - [Combining test cases](#combining-test-cases)
   - [Changelog](#changelog)
+    - [v1.7.1](#v171)
+    - [v1.7](#v17)
+    - [v1.6](#v16)
     - [v1.5](#v15)
     - [v1.4](#v14)
     - [v1.3](#v13)
@@ -15,6 +18,7 @@
     - [v1.1](#v11)
     - [v1.0](#v10)
   - [Future Features](#future-features)
+  - [Uploading to PyPI](#uploading-to-pypi)
 
 # django-test-mixins
 
@@ -163,6 +167,10 @@ class TestIndex(FreshCacheTestCase, HttpCodeTestCase):
 ```
 
 ## Changelog
+
+### v1.7.1
+
+Minor spelling fix in assertion message.
 
 ### v1.7
 

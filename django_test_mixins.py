@@ -21,7 +21,7 @@ class HttpCodeTestCase(TestCase):
         """
         self.assertTrue(
             300 <= response.status_code < 400,
-            "Expected an HTTP 3XX (redirect) response, but bot HTTP %s" %
+            "Expected an HTTP 3XX (redirect) response, but got HTTP %s" %
             response.status_code
         )
 
