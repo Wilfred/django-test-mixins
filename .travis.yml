@@ -8,5 +8,9 @@ env:
 install:
   - pip install $DJANGO
   - pip install mock==1.0.1
+  - pip install coverage==3.7.1
+  - pip install coveralls==0.4.1
 script:
-  - python tests.py
+  - coverage run --source=django_test_mixins.py tests.py
+after_success:
+  coveralls
