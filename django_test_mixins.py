@@ -3,6 +3,7 @@ from django.core.cache import cache
 
 
 class HttpCodeTestCase(TestCase):
+    # TODO: this should be a private method.
     def assertHttpCode(self, response, code, code_description):
         self.assertEqual(
             response.status_code, code,
