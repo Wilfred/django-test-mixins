@@ -16,7 +16,7 @@ class HttpCodeTestCase(TestCase):
     def assertHttpCreated(self, response):
         self.assertHttpCode(response, 201, "Created")
 
-    def assertHttpRedirect(self, response):
+    def assertHttpRedirect(self, response, location=None):
         """Assert that we had any redirect status code.
 
         """
@@ -26,9 +26,18 @@ class HttpCodeTestCase(TestCase):
             response.status_code
         )
 
+        if location:
+            if location.startswith("http://testserver/"):
+                absolute_location = location
+            else:
+                absolute_location = "http://testserver/%s" + location
+
+            self.assertEqual(response['Location'], absolute_location)
+
+
     def assertHttpBadRequest(self, response):
         self.assertHttpCode(response, 400, "Bad Request")
-        
+
     def assertHttpUnauthorized(self, response):
         self.assertHttpCode(response, 401, "Unauthorized")
 
