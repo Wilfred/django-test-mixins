@@ -1,6 +1,8 @@
 from django.test import TestCase
 from django.core.cache import cache
 
+import urlparse
+
 
 class HttpCodeTestCase(TestCase):
     # TODO: this should be a private method.
@@ -30,7 +32,7 @@ class HttpCodeTestCase(TestCase):
             if location.startswith("http://testserver/"):
                 absolute_location = location
             else:
-                absolute_location = "http://testserver/%s" + location
+                absolute_location = urlparse.urljoin("http://testserver/",  location)
 
             self.assertEqual(response['Location'], absolute_location)
 
