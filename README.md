@@ -58,7 +58,7 @@ is simply a matter of:
 It also provides the following assertions for groups of HTTP
 responses:
 
-* `assertHttpRedirect` (3XX)
+* `assertHttpRedirect(response, location=None)` (3XX)
 
 Example:
 
