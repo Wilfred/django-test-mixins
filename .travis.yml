@@ -14,3 +14,11 @@ script:
   - coverage run --source=django_test_mixins.py tests.py
 after_success:
   coveralls
+deploy:
+  provider: pypi
+  user: wilfredh
+  password:
+    secure: UN1MvS38y9hvoH6WJIkvvTNa0DdSrpEwYuuMCKDVvAkeg9FVbPIjQl+bWkwAnoLM7iuwdtHsHSRMQ9a+rzpzCHYtRqEmO73XM8glerQSg47+evEIjUIcPmL0NQDLz2yegvx5DLimHvaSooSQDeYyA/9ovTA4P1Yf17Cy/GfRpNg=
+  on:
+    tags: true
+    repo: Wilfred/django-test-mixins
