@@ -174,6 +174,11 @@ class TestIndex(FreshCacheTestCase, HttpCodeTestCase):
 
 ## Changelog
 
+### v1.8
+
+`HttpCodeTestCase.assertHttpRedirect` can now take a `location`
+argument for verifying that redirects go to a specific path.
+
 ### v1.7.1
 
 Minor spelling fix in assertion message.
