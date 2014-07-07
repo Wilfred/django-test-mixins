@@ -217,10 +217,6 @@ Fixed `HttpCodeTestCase` assertions which were throwing
 
 Initial release.
 
-## Future Features
-
-* PEP 8 assertion mixin
-
 ## Uploading to PyPI
 
 Releasing a new version is a matter of:
