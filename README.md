@@ -1,24 +1,27 @@
-**Table of Contents** *generated with [autotoc](https://github.com/Wilfred/autotoc)*
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc/generate-toc again -->
+**Table of Contents**
 
 - [django-test-mixins](#django-test-mixins)
-  - [Usage](#usage)
-    - [HttpCodeTestCase](#httpcodetestcase)
-    - [EmptyCacheTestCase](#emptycachetestcase)
-    - [FormValidationTestCase](#formvalidationtestcase)
-    - [RedirectTestCase](#redirecttestcase)
-    - [Combining test cases](#combining-test-cases)
-  - [Changelog](#changelog)
-    - [v1.7.1](#v171)
-    - [v1.7](#v17)
-    - [v1.6](#v16)
-    - [v1.5](#v15)
-    - [v1.4](#v14)
-    - [v1.3](#v13)
-    - [v1.2](#v12)
-    - [v1.1](#v11)
-    - [v1.0](#v10)
-  - [Future Features](#future-features)
-  - [Uploading to PyPI](#uploading-to-pypi)
+    - [Usage](#usage)
+        - [HttpCodeTestCase](#httpcodetestcase)
+        - [EmptyCacheTestCase](#emptycachetestcase)
+        - [FormValidationTestCase](#formvalidationtestcase)
+        - [RedirectTestCase](#redirecttestcase)
+        - [Combining test cases](#combining-test-cases)
+    - [Changelog](#changelog)
+        - [v1.8](#v18)
+        - [v1.7.1](#v171)
+        - [v1.7](#v17)
+        - [v1.6](#v16)
+        - [v1.5](#v15)
+        - [v1.4](#v14)
+        - [v1.3](#v13)
+        - [v1.2](#v12)
+        - [v1.1](#v11)
+        - [v1.0](#v10)
+    - [Uploading to PyPI](#uploading-to-pypi)
+
+<!-- markdown-toc end -->
 
 # django-test-mixins
 
