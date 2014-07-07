@@ -1,5 +1,5 @@
 from unittest import main
-from mock import Mock
+from mock import Mock, MagicMock
 
 # set up dummy settings
 # this needs to happen before we import django_test_mixins
@@ -20,11 +20,29 @@ class HttpAssertionsTest(HttpCodeTestCase):
         with self.assertRaises(AssertionError):
             self.assertHttpOK(Mock(status_code=404))
 
+    def test_http_created(self):
+        self.assertHttpCreated(Mock(status_code=201))
+
+        with self.assertRaises(AssertionError):
+            self.assertHttpCreated(Mock(status_code=404))
+
     def test_http_bad_request(self):
         self.assertHttpBadRequest(Mock(status_code=400))
 
         with self.assertRaises(AssertionError):
             self.assertHttpBadRequest(Mock(status_code=200))
+
+    def test_http_unauthorized(self):
+        self.assertHttpUnauthorized(Mock(status_code=401))
+
+        with self.assertRaises(AssertionError):
+            self.assertHttpUnauthorized(Mock(status_code=200))
+
+    def test_http_forbidden(self):
+        self.assertHttpForbidden(Mock(status_code=403))
+
+        with self.assertRaises(AssertionError):
+            self.assertHttpForbidden(Mock(status_code=200))
 
     def test_http_not_found(self):
         self.assertHttpNotFound(Mock(status_code=404))
@@ -38,6 +56,15 @@ class HttpAssertionsTest(HttpCodeTestCase):
 
         with self.assertRaises(AssertionError):
             self.assertHttpRedirect(Mock(status_code=200))
+
+    def test_http_redirect_location(self):
+        mock_response = MagicMock(status_code=302)
+        mock_response.__getitem__.return_value = "http://testserver/foo"
+        
+        self.assertHttpRedirect(mock_response, location="foo")
+
+        with self.assertRaises(AssertionError):
+            self.assertHttpRedirect(mock_response, location="bar")
 
 
 class FormAssertionsTest(FormValidationTestCase):
