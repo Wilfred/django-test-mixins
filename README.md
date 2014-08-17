@@ -28,11 +28,11 @@
 Additional assertions and test conveniences for testing django
 sites. MIT license.
 
-[![Build Status](https://travis-ci.org/Wilfred/django-test-mixins.png)](https://travis-ci.org/Wilfred/django-test-mixins)
+[![Build Status](https://travis-ci.org/Wilfred/django-test-mixins.svg)](https://travis-ci.org/Wilfred/django-test-mixins)
 [![Coverage Status](https://coveralls.io/repos/Wilfred/django-test-mixins/badge.png)](https://coveralls.io/r/Wilfred/django-test-mixins)
-[![Latest Version](https://pypip.in/v/django_test_mixins/badge.png)](https://pypi.python.org/pypi/django_test_mixins/)
-[![Downloads](https://pypip.in/d/django_test_mixins/badge.png)](https://pypi.python.org/pypi/django_test_mixins/)
-[![License](https://pypip.in/license/django_test_mixins/badge.png)](https://pypi.python.org/pypi/django_test_mixins/)
+[![Latest Version](https://pypip.in/v/django_test_mixins/badge.svg)](https://pypi.python.org/pypi/django_test_mixins/)
+[![Downloads](https://pypip.in/d/django_test_mixins/badge.svg)](https://pypi.python.org/pypi/django_test_mixins/)
+[![License](https://pypip.in/license/django_test_mixins/badge.svg)](https://pypi.python.org/pypi/django_test_mixins/)
 
 ## Usage
 
