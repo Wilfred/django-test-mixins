@@ -11,7 +11,10 @@ settings.configure(DATABASES={
     }
 })
 
-from django_test_mixins import HttpCodeTestCase, FormValidationTestCase
+from django.core.cache import cache
+from django.test import TestCase
+from django_test_mixins import HttpCodeTestCase, FormValidationTestCase, EmptyCacheTestCase
+
 
 class HttpAssertionsTest(HttpCodeTestCase):
     def test_http_ok(self):
@@ -95,6 +98,22 @@ class FormAssertionsTest(FormValidationTestCase):
 
         with self.assertRaises(AssertionError):
             self.assertFormInvalid(mock_request)
+
+
+class CacheTest(TestCase):
+    def test_cache_emptied(self):
+        cache.set('foo', 1)
+        self.assertEqual(cache.get('foo'), 1, "Cache doesn't seem to be configured.")
+
+        class MyTestCase(EmptyCacheTestCase):
+            def runTest(self):
+                pass
+
+        test_case = MyTestCase()
+        test_case.setUp()
+
+        self.assertEqual(cache.get('foo'), None,
+                         "Cache was not emptied during setUp!")
 
 
 if __name__ == '__main__':
