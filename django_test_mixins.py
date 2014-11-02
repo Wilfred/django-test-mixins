@@ -73,7 +73,7 @@ class FormValidationTestCase(TestCase):
         form = None
         try:
             if response.context:
-                form = response.context['form']
+                form = response.context[form_name]
         except KeyError:
             pass
 

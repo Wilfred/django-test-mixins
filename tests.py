@@ -79,6 +79,13 @@ class FormAssertionsTest(FormValidationTestCase):
         mock_request = Mock(context={'form': mock_form}, status_code=200)
         self.assertFormInvalid(mock_request)
 
+    def test_form_invalid_custom_name(self):
+        mock_form = Mock()
+        mock_form.is_valid.return_value = False
+        
+        mock_request = Mock(context={'my_form': mock_form}, status_code=200)
+        self.assertFormInvalid(mock_request, form_name="my_form")
+
     def test_form_invalid_fails_on_redirect(self):
         """If the form was valid, the most common scenario is that we were
         redirected and there's no form present.
