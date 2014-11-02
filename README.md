@@ -177,6 +177,11 @@ class TestIndex(FreshCacheTestCase, HttpCodeTestCase):
 
 ## Changelog
 
+### v1.9
+
+Fixed a bug where the `form_name` argument to `assertFormInvalid` was
+being ignored.
+
 ### v1.8
 
 `HttpCodeTestCase.assertHttpRedirect` can now take a `location`
