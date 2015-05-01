@@ -79,7 +79,7 @@ class FormValidationTestCase(TestCase):
 
         if not form:
             self.fail("Could not find a form in the response.")
-        
+
         self.assertFalse(form.is_valid(), "Expected form to be invalid, but it was valid.")
 
         status_code = response.status_code
@@ -101,10 +101,10 @@ class RedirectTestCase(TestCase):
 
         if hasattr(response, "redirect_chain"):
             self.fail("You can't use assertRedirects with follow=True.")
-        
+
         final_url = response._headers['location'][1]
 
-        if not expected_url.startswith('http://'):
+        if not expected_url.startswith('http://') and not expected_url.startswith('https://'):
             # we were given a relative URL, so convert it
             expected_url = "http://testserver%s" % expected_url
 
