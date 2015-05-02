@@ -177,6 +177,11 @@ class TestIndex(FreshCacheTestCase, HttpCodeTestCase):
 
 ## Changelog
 
+### v1.10
+
+Fixed a bug with `.assertRedirectsTo` where absolute HTTPS URLs were
+treated as relative URLs.
+
 ### v1.9
 
 Fixed a bug where the `form_name` argument to `assertFormInvalid` was
