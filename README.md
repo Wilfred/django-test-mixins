@@ -1,3 +1,14 @@
+# django-test-mixins
+
+Additional assertions and test conveniences for testing django
+sites. MIT license.
+
+[![Build Status](https://travis-ci.org/Wilfred/django-test-mixins.svg)](https://travis-ci.org/Wilfred/django-test-mixins)
+[![Coverage Status](https://coveralls.io/repos/Wilfred/django-test-mixins/badge.png)](https://coveralls.io/r/Wilfred/django-test-mixins)
+[![Latest Version](https://pypip.in/v/django_test_mixins/badge.svg)](https://pypi.python.org/pypi/django_test_mixins/)
+[![Downloads](https://pypip.in/d/django_test_mixins/badge.svg)](https://pypi.python.org/pypi/django_test_mixins/)
+[![License](https://pypip.in/license/django_test_mixins/badge.svg)](https://pypi.python.org/pypi/django_test_mixins/)
+
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc/generate-toc again -->
 **Table of Contents**
 
@@ -9,6 +20,8 @@
         - [RedirectTestCase](#redirecttestcase)
         - [Combining test cases](#combining-test-cases)
     - [Changelog](#changelog)
+        - [v1.10](#v110)
+        - [v1.9](#v19)
         - [v1.8](#v18)
         - [v1.7.1](#v171)
         - [v1.7](#v17)
@@ -22,17 +35,6 @@
     - [Uploading to PyPI](#uploading-to-pypi)
 
 <!-- markdown-toc end -->
-
-# django-test-mixins
-
-Additional assertions and test conveniences for testing django
-sites. MIT license.
-
-[![Build Status](https://travis-ci.org/Wilfred/django-test-mixins.svg)](https://travis-ci.org/Wilfred/django-test-mixins)
-[![Coverage Status](https://coveralls.io/repos/Wilfred/django-test-mixins/badge.png)](https://coveralls.io/r/Wilfred/django-test-mixins)
-[![Latest Version](https://pypip.in/v/django_test_mixins/badge.svg)](https://pypi.python.org/pypi/django_test_mixins/)
-[![Downloads](https://pypip.in/d/django_test_mixins/badge.svg)](https://pypi.python.org/pypi/django_test_mixins/)
-[![License](https://pypip.in/license/django_test_mixins/badge.svg)](https://pypi.python.org/pypi/django_test_mixins/)
 
 ## Usage
 
