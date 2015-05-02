@@ -5,9 +5,9 @@ sites. MIT license.
 
 [![Build Status](https://travis-ci.org/Wilfred/django-test-mixins.svg)](https://travis-ci.org/Wilfred/django-test-mixins)
 [![Coverage Status](https://coveralls.io/repos/Wilfred/django-test-mixins/badge.png)](https://coveralls.io/r/Wilfred/django-test-mixins)
-[![Latest Version](https://pypip.in/v/django_test_mixins/badge.svg)](https://pypi.python.org/pypi/django_test_mixins/)
-[![Downloads](https://pypip.in/d/django_test_mixins/badge.svg)](https://pypi.python.org/pypi/django_test_mixins/)
-[![License](https://pypip.in/license/django_test_mixins/badge.svg)](https://pypi.python.org/pypi/django_test_mixins/)
+[![Latest Version](https://img.shields.io/pypi/v/django_test_mixins.svg)](https://pypi.python.org/pypi/django_test_mixins/)
+[![Downloads](https://img.shields.io/pypi/dm/django_test_mixins.svg)](https://pypi.python.org/pypi/django_test_mixins/)
+[![License](https://img.shields.io/pypi/l/django_test_mixins.svg)](https://pypi.python.org/pypi/django_test_mixins/)
 
 <!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc/generate-toc again -->
 **Table of Contents**
