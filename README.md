@@ -1,7 +1,7 @@
 # django-test-mixins
 
 Additional assertions and test conveniences for testing django
-sites. MIT license.
+sites.
 
 [![Build Status](https://travis-ci.org/Wilfred/django-test-mixins.svg)](https://travis-ci.org/Wilfred/django-test-mixins)
 [![Coverage Status](https://coveralls.io/repos/Wilfred/django-test-mixins/badge.png)](https://coveralls.io/r/Wilfred/django-test-mixins)
