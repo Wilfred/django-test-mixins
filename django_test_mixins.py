@@ -1,7 +1,10 @@
 from django.test import TestCase
 from django.core.cache import cache
 
-import urlparse
+try:
+    from urlparse import urljoin  # python2
+except ImportError:
+    from urllib.parse import urljoin  # python3
 
 
 class HttpCodeTestCase(TestCase):
@@ -32,7 +35,7 @@ class HttpCodeTestCase(TestCase):
             if location.startswith("http://testserver/"):
                 absolute_location = location
             else:
-                absolute_location = urlparse.urljoin("http://testserver/",  location)
+                absolute_location = urljoin("http://testserver/", location)
 
             self.assertEqual(response['Location'], absolute_location)
 
