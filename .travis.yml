@@ -18,6 +18,7 @@ deploy:
     secure: LkJ8DY2/rl+faltecO9GXz0Lu3W9GLtCf0vV7YIsIxlNm+nwP3fDQ8aWvdUDoYhXCuCjyY3P4W1ZACMGYqD8tWCP/Q91TiDelJ3cWsSudvpC3npZ9d+44jiJctBvrvrnKtka7/El16YXFn5OwWK+KCRW2SwnW17I4A+7t3Nof40=
   on:
     tags: true
+    python: 3.6
     repo: Wilfred/django-test-mixins
     all_branches: true
 
