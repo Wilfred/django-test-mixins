@@ -2,6 +2,9 @@
 
 Added Python 3 support.
 
+Tags 1.11.1 and 1.11.2 contain the same code, but were created due to
+problems releasing from Travis.
+
 ## v1.10
 
 Fixed a bug with `.assertRedirectsTo` where absolute HTTPS URLs were
