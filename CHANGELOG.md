@@ -1,3 +1,7 @@
+## v1.11
+
+Added Python 3 support.
+
 ## v1.10
 
 Fixed a bug with `.assertRedirectsTo` where absolute HTTPS URLs were
