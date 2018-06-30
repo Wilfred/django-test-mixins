@@ -15,7 +15,7 @@ deploy:
   provider: pypi
   user: wilfredh
   password:
-    secure: UN1MvS38y9hvoH6WJIkvvTNa0DdSrpEwYuuMCKDVvAkeg9FVbPIjQl+bWkwAnoLM7iuwdtHsHSRMQ9a+rzpzCHYtRqEmO73XM8glerQSg47+evEIjUIcPmL0NQDLz2yegvx5DLimHvaSooSQDeYyA/9ovTA4P1Yf17Cy/GfRpNg=
+    secure: LkJ8DY2/rl+faltecO9GXz0Lu3W9GLtCf0vV7YIsIxlNm+nwP3fDQ8aWvdUDoYhXCuCjyY3P4W1ZACMGYqD8tWCP/Q91TiDelJ3cWsSudvpC3npZ9d+44jiJctBvrvrnKtka7/El16YXFn5OwWK+KCRW2SwnW17I4A+7t3Nof40=
   on:
     tags: true
     repo: Wilfred/django-test-mixins
