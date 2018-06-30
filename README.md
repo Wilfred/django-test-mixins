@@ -9,7 +9,7 @@ sites.
 [![Downloads](https://img.shields.io/pypi/dm/django_test_mixins.svg)](https://pypi.python.org/pypi/django_test_mixins/)
 [![License](https://img.shields.io/pypi/l/django_test_mixins.svg)](https://pypi.python.org/pypi/django_test_mixins/)
 
-<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc/generate-toc again -->
+<!-- markdown-toc start - Don't edit this section. Run M-x markdown-toc-generate-toc again -->
 **Table of Contents**
 
 - [django-test-mixins](#django-test-mixins)
@@ -19,19 +19,6 @@ sites.
         - [FormValidationTestCase](#formvalidationtestcase)
         - [RedirectTestCase](#redirecttestcase)
         - [Combining test cases](#combining-test-cases)
-    - [Changelog](#changelog)
-        - [v1.10](#v110)
-        - [v1.9](#v19)
-        - [v1.8](#v18)
-        - [v1.7.1](#v171)
-        - [v1.7](#v17)
-        - [v1.6](#v16)
-        - [v1.5](#v15)
-        - [v1.4](#v14)
-        - [v1.3](#v13)
-        - [v1.2](#v12)
-        - [v1.1](#v11)
-        - [v1.0](#v10)
     - [Uploading to PyPI](#uploading-to-pypi)
 
 <!-- markdown-toc end -->
@@ -176,61 +163,6 @@ class TestIndex(FreshCacheTestCase, HttpCodeTestCase):
         response = self.client.get(reverse('index'))
         self.assertHttpOK(response)
 ```
-
-## Changelog
-
-### v1.10
-
-Fixed a bug with `.assertRedirectsTo` where absolute HTTPS URLs were
-treated as relative URLs.
-
-### v1.9
-
-Fixed a bug where the `form_name` argument to `assertFormInvalid` was
-being ignored.
-
-### v1.8
-
-`HttpCodeTestCase.assertHttpRedirect` can now take a `location`
-argument for verifying that redirects go to a specific path.
-
-### v1.7.1
-
-Minor spelling fix in assertion message.
-
-### v1.7
-
-Added `HttpCodeTestCase.assertHttpRedirect`
-
-### v1.6
-
-Added `HttpCodeTestCase.assertHttpUnauthorized`
-
-### v1.5
-
-Added `HttpCodeTestCase.assertHttpMethodNotAllowed`
-
-### v1.4
-
-Added `HttpCodeTestCase.assertHttpCreated`
-
-### v1.3
-
-Added `RedirectTestCase`.
-
-### v1.2
-
-Fixed a crash on `HttpCodeTestCase` assertions when the assertion
-failed.
-
-### v1.1
-
-Fixed `HttpCodeTestCase` assertions which were throwing
-`AttributeError`.
-
-### v1.0
-
-Initial release.
 
 ## Uploading to PyPI
 
