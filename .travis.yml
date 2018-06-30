@@ -20,3 +20,6 @@ deploy:
     tags: true
     repo: Wilfred/django-test-mixins
     all_branches: true
+
+notifications:
+  email: false
