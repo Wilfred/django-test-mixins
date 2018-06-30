@@ -1,16 +1,12 @@
 language: python
 python:
   - 2.7
+  - 3.6
 env:
-  - DJANGO=Django==1.4.0
-  - DJANGO=Django==1.5.0
-  - DJANGO=Django==1.6.0
-  - DJANGO=Django==1.7.0
+  - DJANGO=Django==1.11.0
 install:
   - pip install $DJANGO
-  - pip install mock==1.0.1
-  - pip install coverage==3.7.1
-  - pip install coveralls==0.4.1
+  - pip install mock==1.0.1 coverage==3.7.1 coveralls==0.4.1
 script:
   - coverage run --source=django_test_mixins.py tests.py
 after_success:
